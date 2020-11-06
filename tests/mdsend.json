@@ -1,0 +1,9 @@
+[
+    { "Instref" : {"csvfile":"configs/instref.csv"} },
+
+    { "name" : "sender1",  "class": "MDSender" , 
+      "data": "tests/HHI_orders.log" } 
+    
+]
+
+

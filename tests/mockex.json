@@ -1,0 +1,10 @@
+[
+    { "Instref" : {"csvfile":"configs/instref.csv"} },
+
+    { "name" : "Go1",  "class": "MockExchange" , 
+      "addr": "127.0.0.1:8081" 
+    } 
+    
+]
+
+

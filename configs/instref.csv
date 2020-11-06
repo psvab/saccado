@@ -1,0 +1,5 @@
+instid,name,exIt,exchg,addr
+1,HSIF9,HSIF9,Go1,224.1.1.1:3001
+2,HHIF9,HHIF9,Go2,224.1.1.1:3002
+
+

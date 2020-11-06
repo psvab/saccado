@@ -1,0 +1,6 @@
+# starts the supporting components - market data source and the mock exchange
+
+killall sctrade
+./dist/Debug/GNU-Linux/sctrade configs/mockex.json & 
+./dist/Debug/GNU-Linux/sctrade configs/mdsend.json &
+

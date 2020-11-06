@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>1</activeConfTypeElem>
+        <activeConfIndexElem>1</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/petr/code/sctrade/Instref/Instref.h</file>
+            <file>file:/home/petr/code/sctrade/Strategy/Strategy.h</file>
+            <file>file:/home/petr/code/sctrade/Core/Component.h</file>
+            <file>file:/home/petr/code/sctrade/Exchg/OrderOp.h</file>
+            <file>file:/home/petr/code/sctrade/Core/Component.cpp</file>
+            <file>file:/home/petr/code/sctrade/Core/RingBuffer.h</file>
+            <file>file:/home/petr/code/sctrade/Core/ComponentManager.cpp</file>
+            <file>file:/home/petr/code/sctrade/Exchg/MDLink.h</file>
+            <file>file:/home/petr/code/sctrade/Core/Event.h</file>
+            <file>file:/home/petr/code/sctrade/Exchg/TradingLink.h</file>
+            <file>file:/home/petr/code/sctrade/main.cpp</file>
+            <file>file:/home/petr/code/sctrade/Core/MData.h</file>
+            <file>file:/home/petr/code/sctrade/Exchg/TradingLink.cpp</file>
+            <file>file:/home/petr/code/sctrade/Util/MDSender.h</file>
+            <file>file:/home/petr/code/sctrade/Util/MockExchange.h</file>
+            <file>file:/home/petr/code/sctrade/Strategy/Strategy.cpp</file>
+            <file>file:/home/petr/code/sctrade/Util/MockExchange.cpp</file>
+            <file>file:/home/petr/code/sctrade/tests/strattest.h</file>
+            <file>file:/home/petr/code/sctrade/Util/MDSender.cpp</file>
+            <file>file:/home/petr/code/sctrade/Instref/Instref.cpp</file>
+            <file>file:/home/petr/code/sctrade/Core/Network.cpp</file>
+            <file>file:/home/petr/code/sctrade/Core/Network.h</file>
+            <file>file:/home/petr/code/sctrade/Core/General.h</file>
+        </group>
+    </open-files>
+</project-private>

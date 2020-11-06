@@ -1,0 +1,12 @@
+[
+    { "Instref" : {"csvfile":"configs/instref.csv"} },
+
+    { "name" : "sender1",  "class": "MDSender" , 
+      "data": "data/HHI_orders.log" }, 
+
+    { "name" : "sender2",  "class": "MDSender" , 
+      "data": "data/HSI_orders.log" } 
+    
+]
+
+

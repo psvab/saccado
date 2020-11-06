@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Exchg/Book.h</itemPath>
+      <itemPath>Core/Cache.h</itemPath>
+      <itemPath>Core/Component.h</itemPath>
+      <itemPath>Core/ComponentManager.h</itemPath>
+      <itemPath>Core/Event.h</itemPath>
+      <itemPath>Core/EventQ.h</itemPath>
+      <itemPath>Core/Factory.h</itemPath>
+      <itemPath>Core/General.h</itemPath>
+      <itemPath>Instref/Instref.h</itemPath>
+      <itemPath>Core/Logger.h</itemPath>
+      <itemPath>Exchg/MDLink.h</itemPath>
+      <itemPath>Util/MDSender.h</itemPath>
+      <itemPath>Core/MData.h</itemPath>
+      <itemPath>Util/MockExchange.h</itemPath>
+      <itemPath>Core/Network.h</itemPath>
+      <itemPath>Order.h</itemPath>
+      <itemPath>Exchg/OrderOp.h</itemPath>
+      <itemPath>Core/RingBuffer.h</itemPath>
+      <itemPath>Strategy/Strategy.h</itemPath>
+      <itemPath>Core/ThreadUtils.h</itemPath>
+      <itemPath>Exchg/TradingLink.h</itemPath>
+      <itemPath>Core/Util.h</itemPath>
+      <itemPath>tests/booktest.h</itemPath>
+      <itemPath>tests/mockexchgtest.h</itemPath>
+      <itemPath>tests/strattest.h</itemPath>
+      <itemPath>tests/utilstest.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Core/Component.cpp</itemPath>
+      <itemPath>Core/ComponentManager.cpp</itemPath>
+      <itemPath>Core/EventQ.cpp</itemPath>
+      <itemPath>Instref/Instref.cpp</itemPath>
+      <itemPath>Core/Logger.cpp</itemPath>
+      <itemPath>Exchg/MDLink.cpp</itemPath>
+      <itemPath>Util/MDSender.cpp</itemPath>
+      <itemPath>Util/MockExchange.cpp</itemPath>
+      <itemPath>Core/Network.cpp</itemPath>
+      <itemPath>Strategy/Strategy.cpp</itemPath>
+      <itemPath>Exchg/TradingLink.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f3" displayName="GTests" projectFiles="true" kind="TEST">
+        <itemPath>tests/componentmanagertest.h</itemPath>
+        <itemPath>tests/gtests.cpp</itemPath>
+        <itemPath>tests/instreftest.h</itemPath>
+        <itemPath>tests/mdsendertest.h</itemPath>
+        <itemPath>tests/nettest.h</itemPath>
+        <itemPath>tests/ringbuffertest.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>gtest</pElem>
+            <pElem>Core</pElem>
+            <pElem>.</pElem>
+            <pElem>Exchg</pElem>
+            <pElem>Instref</pElem>
+            <pElem>Util</pElem>
+            <pElem>Strategy</pElem>
+          </incDir>
+          <commandLine>-std=c++17</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lgtest -lpthread</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="Core/Cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Component.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/Component.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/ComponentManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/ComponentManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/EventQ.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/EventQ.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Factory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/General.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Logger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/Logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/MData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Network.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/Network.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/RingBuffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/ThreadUtils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exchg/Book.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exchg/MDLink.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Exchg/MDLink.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exchg/OrderOp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exchg/TradingLink.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Exchg/TradingLink.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Instref/Instref.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Instref/Instref.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Order.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Strategy/Strategy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Strategy/Strategy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Util/MDSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Util/MDSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Util/MockExchange.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Util/MockExchange.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+          <incFile>
+            <pElem>tests/componentmanagertest.h</pElem>
+            <pElem>tests/ringbuffertest.h</pElem>
+          </incFile>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+        </linkerTool>
+      </folder>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/booktest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/componentmanagertest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/gtests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/instreftest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/mdsendertest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/mockexchgtest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/nettest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/ringbuffertest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/strattest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/utilstest.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>gtest</pElem>
+            <pElem>Core</pElem>
+            <pElem>.</pElem>
+            <pElem>Exchg</pElem>
+            <pElem>Instref</pElem>
+            <pElem>Util</pElem>
+            <pElem>Strategy</pElem>
+          </incDir>
+          <commandLine>-std=c++17</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lgtest -lpthread</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="Core/Cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Component.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/Component.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/ComponentManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/ComponentManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/EventQ.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/EventQ.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Factory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/General.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Logger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/Logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/MData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Network.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Core/Network.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/RingBuffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/ThreadUtils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Core/Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exchg/Book.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exchg/MDLink.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Exchg/MDLink.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exchg/OrderOp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Exchg/TradingLink.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Exchg/TradingLink.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Instref/Instref.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Instref/Instref.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Order.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Strategy/Strategy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Strategy/Strategy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Util/MDSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Util/MDSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Util/MockExchange.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Util/MockExchange.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+          <incFile>
+            <pElem>tests/componentmanagertest.h</pElem>
+            <pElem>tests/ringbuffertest.h</pElem>
+          </incFile>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+        </linkerTool>
+      </folder>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/booktest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/componentmanagertest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/gtests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/instreftest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/mdsendertest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/mockexchgtest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/nettest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/ringbuffertest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/strattest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/utilstest.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

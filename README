@@ -1,1 +1,98 @@
-Saccado project 
+Saccado project
+
+---------------------------
+PREREQUISITES
+
+g++ supporting C++17 (tested with 9+)  in default location
+boost installed in default location
+
+recommended: Netbeans to use netbeans project specifics convenience methods
+
+---------------------------
+HOW TO BUILD
+
+To build and run tests:
+make test
+
+To build debug:
+make 
+
+To build release
+make CONF=Release
+
+
+---------------------------
+HOW TO RUN
+
+sctrade binary is created in dist sub-folders and then it is  run as
+
+Below for debug version (to be started in this order):
+
+./dist/Debug/GNU-Linux/sctrade configs/mockex.json 
+./dist/Debug/GNU-Linux/sctrade configs/app1.json 
+./dist/Debug/GNU-Linux/sctrade configs/mdsend.json 
+
+Order explained:
+ * app requires mock exchange to connect to.
+ * mdsend wold start sending too soon if we started it first.
+
+
+prepade run scripts
+startall and startutil are present too with info at their top.
+
+
+---------------------------
+DESIGN
+
+All configurations are managed as a json config with details about what Components are to be started.
+Each element is a Component managed by the ComponentManager
+
+The market data is emitted by a configuration of MDSender and Mock exchange is a config with MockExchange Component.
+
+Trading App will have MDLink objects to source MData (market data) and TradingLink opjects to source Fills and to route
+orders. 
+Central hub is EventQ object that passed sourced events to the listener - the Strategy.
+Strategy initialises with trading link linked to each instrument it wants to trade so it knows what trading link to pass
+its order requests to.
+
+Risk limits are drafted as maximal order count in a time itnerval (about 1s) and maximla position. Beynd that the strategy 
+implements a rather very silly mean reversion strategy.
+
+
+Time measurements of latency are enabled by taking timestamps of the market data ingress and passing it through the system.
+Another timestamp is taken at the order sent and that time is logged so th elog contains both timestamps.
+
+
+The code layout is trying to put items with common idea into the same folder, leaving all files to be linked at once 
+to enable the best link-time optimistions (TBD).
+
+
+Data streams:
+The data paths work from the files, read by MDSender and sent at a given reduced or original rate as multicast packets. 
+There is no recovery mechanism ATM (TBD) sostarting late means missing orders.The trading app received the data in MDLink 
+and converts it into books, using the touch for its market data. That is pushed to the event-Q (spinlocked ring buffer - to be improved) 
+and from there the Strategy reads all events. Shoudl it trade, it sends the order requests to the mock exchange via 
+full duplex TCP.  The mock exchange on this TCP echoes back with a fill. The fill is then convered into internal fill
+and pushed as an event into the event queue for the Strategy to pick up.
+
+Lifetime of objects:
+All objects are created and destroyed from the main thread by the ComponentManager (therefore no races). The main thread
+is only serving to that and waits for a shutdown command or runs indefinitely (hence some apps may not like to quit).
+
+
+Build system:
+The default netbeans build system was used due to the lack of time. A proper scons or cmake system is due.
+
+Data
+Logging for orders and positions shoudl allow tracking. Market data shoudl be done via a switch replay through a cracker (logging level set).
+
+---------------------------
+COMMENTS
+
+In the incredible time pressure it was impossible to deliver fuly working system without cutting manyh corners and 
+therefore the application is in need of a lot of work to get it into a production quality on every level.
+
+
+Exchanges and MD sources are ATM setup to be in one config and not two each. That is only for easier config management, they could be
+easily placed in different ones and started as idependent binaries.
+

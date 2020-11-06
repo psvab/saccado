@@ -1,0 +1,7 @@
+# starts all sides to the project in the right order - mdsource, mock exchange and the trading app
+
+killall sctrade
+./dist/Debug/GNU-Linux/sctrade configs/mockex.json & 
+./dist/Debug/GNU-Linux/sctrade configs/app1.json &
+./dist/Debug/GNU-Linux/sctrade configs/mdsend.json & 
+

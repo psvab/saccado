@@ -1,0 +1,29 @@
+[
+    { "Instref" : {"csvfile":"configs/instref.csv"} },
+    
+    { "name" : "EventQ",  "class": "EventQ"  
+    },
+    
+
+    { "name" : "tlink1",  "class": "MockTLink" , "exchg":"Go1", 
+      "insts": ["HHIF9"], "addr":"127.0.0.1:8081" 
+    }, 
+    { "name" : "tlink2",  "class": "MockTLink" , "exchg":"Go2", 
+      "insts": ["HSIF9"], "addr":"127.0.0.1:8082" 
+    },
+
+    { "name" : "mdlink1",  "class": "GoMDLink" , 
+        "inst": "HHIF9" 
+    },
+    { "name" : "mdlink2",  "class": "GoMDLink" , 
+        "inst": "HSIF9" 
+    },
+
+    { "name" : "strat1",  "class": "Strategy1" , "exchg":"Go2", 
+      "insts": ["HSIF9", "HHIF9"], 
+      "max_orders":3, "max_pos" : 4
+    }
+
+]
+
+

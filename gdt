@@ -1,0 +1,18 @@
+set breakpoint pending on
+
+#b Network.cpp:12
+#b mdsendertest.h:30
+#b ComponentManager.cpp:105
+#disa 2
+#b mdsendertest.h:27
+#b Logger.h:48
+#b MockExchange.cpp:34
+#b TradingLink.cpp:23
+#b TradingLink.cpp:53
+b strattest.h:67
+b Strategy.cpp:51
+b Strategy.cpp:93
+
+r
+
+
